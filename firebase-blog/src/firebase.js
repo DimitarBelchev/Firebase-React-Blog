@@ -4,8 +4,8 @@ import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCnLQBqc5kTRhR-hmA1FXKOVhVo-V5aohg",
-  authDomain: "fir-react-blog-edf23.firebaseapp.com",
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
   projectId: "fir-react-blog-edf23",
   storageBucket: "fir-react-blog-edf23.appspot.com",
   messagingSenderId: "110086287392",

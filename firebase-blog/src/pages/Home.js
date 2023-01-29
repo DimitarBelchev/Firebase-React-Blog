@@ -107,7 +107,7 @@ const Home = ({ setActive, user, active }) => {
       setBlogs((blogs) => [...blogs, ...blogsData]);
       setLastVisible(docSnapshot.docs[docSnapshot.docs.length - 1]);
     } else {
-      toast.info("No more blog to display");
+      toast.info("No more blogs to display");
       setHide(true);
     }
   };
@@ -161,11 +161,11 @@ const Home = ({ setActive, user, active }) => {
   }
 
   const handleDelete = async (id) => {
-    if (window.confirm("Are you sure wanted to delete that blog ?")) {
+    if (window.confirm("Are you sure that you want to delete this blog?")) {
       try {
         setLoading(true);
         await deleteDoc(doc(db, "blogs", id));
-        toast.success("Blog deleted successfully");
+        toast.success("Blog deleted successfully!");
         setLoading(false);
       } catch (err) {
         console.log(err);

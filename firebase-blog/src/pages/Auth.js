@@ -40,11 +40,11 @@ const Auth = ({ setActive, setUser }) => {
         setUser(user);
         setActive("home");
       } else {
-        return toast.error("All fields are mandatory to fill");
+        return toast.error("Please make sure all fields are filled in correctly.");
       }
     } else {
       if (password !== confirmPassword) {
-        return toast.error("Password don't match");
+        return toast.error("Passwords don't match.");
       }
       if (firstName && lastName && email && password) {
         const { user } = await createUserWithEmailAndPassword(
@@ -55,7 +55,7 @@ const Auth = ({ setActive, setUser }) => {
         await updateProfile(user, { displayName: `${firstName} ${lastName}` });
         setActive("home");
       } else {
-        return toast.error("All fields are mandatory to fill");
+        return toast.error("Please make sure all fields are filled in correctly.");
       }
     }
     navigate("/");

@@ -95,7 +95,7 @@ const Detail = ({ setActive, user }) => {
       name: user?.displayName,
       body: userComment,
     });
-    toast.success("Comment posted successfully");
+    toast.success("Comment posted successfully!");
     await updateDoc(doc(db, "blogs", id), {
       ...blog,
       comments,

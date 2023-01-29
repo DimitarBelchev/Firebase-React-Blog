@@ -71,7 +71,7 @@ const AddEditBlog = ({ user, setActive }) => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadUrl) => {
-            toast.info("Image upload to firebase successfully");
+            toast.info("Image upload to firebase successfully!");
             setForm((prev) => ({ ...prev, imgUrl: downloadUrl }));
           });
         }
@@ -122,7 +122,7 @@ const AddEditBlog = ({ user, setActive }) => {
             author: user.displayName,
             userId: user.uid,
           });
-          toast.success("Blog created successfully");
+          toast.success("Blog created successfully!");
         } catch (err) {
           console.log(err);
         }
@@ -134,13 +134,13 @@ const AddEditBlog = ({ user, setActive }) => {
             author: user.displayName,
             userId: user.uid,
           });
-          toast.success("Blog updated successfully");
+          toast.success("Blog updated successfully!");
         } catch (err) {
           console.log(err);
         }
       }
     } else {
-      return toast.error("All fields are mandatory to fill");
+      return toast.error("Please make sure all fields are filled in correctly.");
     }
 
     navigate("/");

@@ -125,7 +125,7 @@ const Detail = ({ setActive, user }) => {
     }
   };
 
-  console.log("relatedBlogs", relatedBlogs);
+  // console.log("relatedBlogs", relatedBlogs);
   return (
     <div className="single">
       <div

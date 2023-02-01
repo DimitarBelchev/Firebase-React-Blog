@@ -4,7 +4,7 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { toast } from "react-toastify";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +20,7 @@ const initialState = {
 const Auth = ({ setActive, setUser }) => {
   const [state, setState] = useState(initialState);
   const [signUp, setSignUp] = useState(false);
+  useEffect(() => { setActive("login")} ,[])
 
   const { email, password, firstName, lastName, confirmPassword } = state;
 
@@ -44,6 +45,12 @@ const Auth = ({ setActive, setUser }) => {
         return toast.error("Please make sure all fields are filled in correctly.");
       }
     } else {
+    //   if(error.code == "auth/email-already-in-use"){
+    //     alert("Email already in use")
+    // }
+      if (password.length<6) {
+        return toast.error("Password should be at least 6 characters.");
+      }
       if (password !== confirmPassword) {
         return toast.error("Passwords don't match.");
       }

@@ -69,7 +69,7 @@ function App() {
         <Route
           path="/create"
           element={
-            user?.uid ? <AddEditBlog user={user} /> : <Navigate to="/auth" />
+            user?.uid ? <AddEditBlog user={user} /> : <Navigate to="/auth" setActive={setActive} />
           }
         />
         <Route

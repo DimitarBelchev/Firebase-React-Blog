@@ -49,7 +49,7 @@ const Auth = ({ setActive, setUser }) => {
     //     alert("Email already in use")
     // }
       if (password.length<6) {
-        return toast.error("Password should be at least 6 characters.");
+        return toast.error("Password should be at least 6 characters long.");
       }
       if (password !== confirmPassword) {
         return toast.error("Passwords don't match.");

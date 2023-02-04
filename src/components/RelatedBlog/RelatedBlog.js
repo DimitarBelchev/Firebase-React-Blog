@@ -11,7 +11,7 @@ const RelatedBlog = ({ blogs, id }) => {
         <div className="row gx-5">
           {blogs.length === 1 && (
             <h5 className="text-center">
-              Related Blogs not found with this current blog
+              Related Blogs not found
             </h5>
           )}
           {blogs

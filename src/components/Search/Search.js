@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import './Search.scss'
 const Search = ({ search, handleChange }) => {
   const navigate = useNavigate();
 

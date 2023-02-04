@@ -12,6 +12,7 @@ import {
   where,
 } from "firebase/firestore";
 import { isEmpty } from "lodash";
+import './Detail.scss'
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -154,11 +155,11 @@ const Detail = ({ setActive, user }) => {
               <br />
               <div className="custombox">
                 <div className="scroll">
-                  <h4 className="small-title">{comments?.length} Comment</h4>
+                  <h4 className="small-title">{comments?.length} Comments</h4>
                   {isEmpty(comments) ? (
                     <UserComments
                       msg={
-                        "No Comment yet posted on this blog. Be the first to comment"
+                        "Be the first to comment!"
                       }
                     />
                   ) : (

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './UserComments.scss'
 const UserComments = ({ name, body, createdAt, msg }) => {
   return (
     <div>

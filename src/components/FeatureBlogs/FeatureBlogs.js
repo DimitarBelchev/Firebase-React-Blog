@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import './FeatureBlogs.scss'
 const FeatureBlogs = ({ blogs, title }) => {
   const navigate = useNavigate();
   return (

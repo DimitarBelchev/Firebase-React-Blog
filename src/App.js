@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import "./style.scss";
-import "./media-query.css";
 import Home from "./pages/Home/Home";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";

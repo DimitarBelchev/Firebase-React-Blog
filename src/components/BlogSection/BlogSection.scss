@@ -28,7 +28,7 @@
 
 .title {
     font-size: 17px;
-	color: #222!important;
+	color: #222;
 	font-weight: 800;
     font-family: "Poppins";
     text-decoration: none;
@@ -51,11 +51,11 @@
 }
 
 .fa-trash {
-	color: #c43421 !important;
+	color: #c43421 ;
 }
 
 .fa-edit {
-	color: lightsalmon !important;
+	color: lightsalmon ;
 }
 
 .meta-info {
@@ -75,7 +75,7 @@
 .author {
   display: inline-block;
   font-weight: 600;
-  font-size: 15px !important;	
+  font-size: 15px ;	
 }
 
 .short-description {
@@ -84,10 +84,10 @@
 }
 
 .btn-read {
-    background: #544e66 !important;
-	@include border-radius(0!important);
-	color: #fff!important;
-	padding: 5px 10px!important;
+    background: #544e66 ;
+	@include border-radius(0);
+	color: #fff;
+	padding: 5px 10px;
 	float: left;
 	margin-top: 10px;
 	font-size: 14px;

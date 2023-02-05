@@ -1,31 +1,31 @@
 @import '../../style.scss';
 
 .blog-form input:focus {
-    border-color: $yellow !important;
+    border-color: $yellow ;
 }
 
 .description-box {
-    @include border-radius(0!important);
+    @include border-radius(0);
 	height: 150px;
 	resize: none;
-	padding-top: 20px!important;
-	letter-spacing: 1px!important; 
+	padding-top: 20px;
+	letter-spacing: 1px; 
 }
 
 .btn-add {
-    background: #bf7034 !important;
-	@include border-radius(0!important);
-	color: #fff!important;
-	padding: 10px 50px!important;
+    background: #bf7034 ;
+	@include border-radius(0);
+	color: #fff;
+	padding: 10px 50px;
 }
 
 
 .react-tag-input {
-    height: 45px !important;
+    height: 45px ;
 }
 
 .react-tag-input:focus {
-    border-color: $yellow !important;   
+    border-color: $yellow ;   
 }
 
 .catg-dropdown {
@@ -36,7 +36,7 @@
   }
   
   .catg-dropdown:focus {
-      outline: none !important;
+      outline: none ;
       border-color: $yellow;
   }
   

@@ -1,5 +1,6 @@
 $yellow:#f5bc04;
 
+
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
@@ -37,8 +38,8 @@ $yellow:#f5bc04;
 }
 
 .paddding {
-	padding-left: 0!important;
-	padding-right: 0!important;
+	padding-left: 0;
+	padding-right: 0;
 }
 // Home
 .spinner {
